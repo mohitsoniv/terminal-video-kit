@@ -65,3 +65,4 @@ Yeh chupchap chalti hai, video mein nahi dikhti. Example `topics/dbms-01-basics/
 
     bash topics/<naam>/setup.sh      # agar setup.sh hai
     python3 highlight.py check topics/<naam>
+# terminal-video-kit
