@@ -1,0 +1,6 @@
+# format:  regex pattern ||| sentence
+^\$ psql ||| अब जान-बूझकर एक गलती करते हैं। हम एक order डाल रहे हैं जिसका customer underscore id है 99।
+^\$ psql ||| लेकिन हमारे customers table में सिर्फ दो customers हैं, जिनकी id 1 और 2 है। 99 नाम का कोई customer है ही नहीं।
+^ERROR: ||| और Postgres ने इसे मना कर दिया। यह foreign key constraint का काम है।
+^DETAIL: ||| Postgres साफ बता रहा है कि customer underscore id 99 customers table में मौजूद नहीं है।
+ ||| यही database की ताक़त है। गलत data application तक पहुँचने से पहले ही रोक दिया जाता है। इसे referential integrity कहते हैं।

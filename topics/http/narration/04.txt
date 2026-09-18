@@ -1,0 +1,5 @@
+# format:  regex pattern ||| sentence
+^\$ curl ||| अब उसी file पर POST request भेजते हैं। dash X POST से method बदल जाता है।
+^HTTP/ ||| इस बार जवाब आया 501। 5 से शुरू होने वाले codes server की तरफ की समस्या बताते हैं।
+^HTTP/ ||| 501 का मतलब है Not Implemented, यानी server यह method support ही नहीं करता।
+ ||| Python का यह simple server सिर्फ files देने के लिए बना है। इसलिए यह GET और HEAD समझता है, लेकिन POST नहीं।

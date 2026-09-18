@@ -1,0 +1,5 @@
+^\$ psql ||| दूसरा है Read, यानी data पढ़ना। इसके लिए SELECT command चलती है।
+SELECT \* ||| Star का मतलब है सारे columns दिखाओ। ORDER BY से rows किसी एक column के हिसाब से क्रम में आ जाती हैं।
+^ +1 \| Mohit ||| यह रही पूरी customers table। Mohit और Priya पहले से थे।
+^ +3 \| Neha ||| और सबसे नीचे Neha, जो अभी पिछले step में हमने जोड़ी थी।
+3 rows ||| Postgres गिनकर बता रहा है कि कुल तीन rows हैं।

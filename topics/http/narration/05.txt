@@ -1,0 +1,7 @@
+# format:  regex pattern ||| sentence
+^\$ curl ||| आखिरी step में असली internet पर, example dot com पर, HTTPS request भेजते हैं। grep से हम सिर्फ काम की lines देख रहे हैं।
+^\* Connected to ||| यह line बताती है कि server से connection बन गया, port 443 पर, जो HTTPS का default port है।
+^\* SSL connection ||| यह line बताती है कि connection TLS से encrypt हुआ है, और कौन सा TLS version इस्तेमाल हुआ।
+^\* ALPN: server ||| इस line में client और server ने तय किया कि कौन सा HTTP version चलेगा। h2 का मतलब है HTTP 2।
+^< HTTP/ ||| और आखिर में response आया 200।
+ ||| तो HTTPS कोई अलग protocol नहीं है। यह वही HTTP है, जो TLS के अंदर चलता है।

@@ -1,0 +1,9 @@
+ ||| अब असली काम शुरू। हम Postgres से जुड़ रहे हैं। ||| sudo -u postgres psql = postgres user banke connect karna
+^\$ sudo|^keen@ ||| Install के समय Postgres अपना एक system user बनाता है, जिसका नाम postgres होता है। शुरुआत में हम उसी के नाम से जुड़ते हैं।
+^psql \(18 ||| यहाँ एक ध्यान देने वाली बात है। psql यानी client का version 18 है, लेकिन server 16 पर चल रहा है। दोनों का अलग होना आम बात है, और नया client पुराने server से आराम से जुड़ जाता है। ||| psql = client, postgres server = alag software
+postgres=# ||| यह psql का prompt है। यहाँ से जो भी लिखेंगे, वो सीधे database पर चलेगा।
+conninfo ||| conninfo बताता है कि हम किस database से, किस user के नाम पर, और किस रास्ते से जुड़े हैं। ||| \conninfo = connection ki jaankari
+^ Database ||| database का नाम postgres है, यानी हम default database में हैं।
+^ Client User ||| और जुड़ने वाला user भी postgres ही है।
+^ Socket Directory|^ Server Port ||| जुड़ने का रास्ता socket है, और port 5432, जो Postgres का default port है।
+ ||| ध्यान रखिए, backslash से शुरू होने वाली commands psql की अपनी हैं, SQL नहीं। और इन्हें खत्म करने के लिए semicolon नहीं लगता।

@@ -1,0 +1,5 @@
+# wait 5
+sudo -u postgres psql -d shopdb
+CREATE TABLE products (id SERIAL PRIMARY KEY, name TEXT);
+\dt
+\q

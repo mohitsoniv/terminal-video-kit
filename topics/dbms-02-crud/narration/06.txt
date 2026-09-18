@@ -1,0 +1,4 @@
+^\$ psql ||| चौथा है Delete, यानी row हटाना। यहाँ हम customer id 3 यानी Neha को हटा रहे हैं।
+^ +3 \| Neha ||| RETURNING दिखा रहा है कि हटी हुई row Neha की थी।
+DELETE 1 ||| DELETE 1 का मतलब है एक row हट गई।
+ ||| Neha का कोई order नहीं था, इसलिए वो आसानी से हट गई। अब ऐसा customer हटाकर देखते हैं जिसके orders मौजूद हैं।

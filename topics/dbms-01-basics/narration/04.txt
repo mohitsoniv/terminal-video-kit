@@ -1,0 +1,6 @@
+# format:  regex pattern ||| sentence
+^\$ psql ||| अब table में data डालते हैं। INSERT command नई rows बनाती है।
+VALUES ||| ध्यान दीजिए, हमने सिर्फ name और city दिए हैं। customer underscore id हमने नहीं लिखा, क्योंकि SERIAL की वजह से वो अपने आप भर जाता है।
+RETURNING ||| RETURNING लिखने से Postgres बताता है कि उसने कौन सी values असल में save कीं।
+^ +[0-9]+ \| ||| और देखिए, Mohit को id मिली 1 और Priya को 2। यही हमारे दोनों customers की पहचान है।
+INSERT 0 2 ||| नीचे लिखा है INSERT 0 2, यानी दो rows successfully insert हो गईं।

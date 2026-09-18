@@ -1,0 +1,9 @@
+# format:  regex pattern ||| sentence
+ ||| अब देखिए कि HTTP 1.1 असल में सिर्फ text है।
+^\$ printf ||| यहाँ हम curl के बिना, printf से request खुद लिख रहे हैं, और nc यानी netcat से सीधे server के port 18080 पर भेज रहे हैं।
+^\$ printf ||| Request में तीन चीज़ें हैं। Request line, Host header, और आखिर में एक खाली line, जो बताती है कि headers खत्म हो गए।
+^\$ printf ||| backslash r backslash n का मतलब है line का अंत, जैसा HTTP 1.1 का नियम कहता है।
+^HTTP/ ||| और server ने जवाब भेजा। सबसे ऊपर status line।
+^(Server|Date|Content-|Last-Modified): ||| उसके बाद headers।
+<h1> ||| और आखिर में हमारा HTML।
+ ||| मतलब HTTP 1.1 की request इंसान भी हाथ से लिख सकता है। HTTP 2 और HTTP 3 binary हैं, इसलिए उनमें ऐसा नहीं कर सकते।

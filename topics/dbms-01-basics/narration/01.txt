@@ -1,0 +1,8 @@
+# format:  regex pattern ||| sentence
+ ||| सबसे पहले हम एक table बनाते हैं। Database की दुनिया में जिस चीज़ के बारे में हम जानकारी रखना चाहते हैं, उसे entity कहते हैं।
+^\$ psql ||| यहाँ हमारी entity है customer, यानी ग्राहक। हर entity के लिए एक table बनता है।
+customer_id SERIAL ||| Table के अंदर जो columns हैं, वो attributes कहलाते हैं। यहाँ तीन attributes हैं। customer underscore id, name, और city।
+name TEXT ||| हर attribute का एक data type होता है, जो बताता है कि उसमें किस तरह का data आएगा। TEXT का मतलब है कोई भी text, और NOT NULL का मतलब है यह column खाली नहीं छोड़ा जा सकता।
+PRIMARY KEY ||| customer underscore id को हमने PRIMARY KEY बनाया है। Primary key वो attribute है जो हर row को अलग पहचान देता है। दो customers का id कभी एक जैसा नहीं हो सकता, और यह खाली भी नहीं रह सकता।
+SERIAL ||| SERIAL का मतलब है कि यह number Postgres खुद बढ़ाकर भरता रहेगा, हमें हर बार लिखना नहीं पड़ेगा।
+^CREATE TABLE ||| और यह रहा जवाब। CREATE TABLE का मतलब है table बन गया।

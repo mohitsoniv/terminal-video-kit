@@ -1,0 +1,4 @@
+# wait 5
+sudo -u postgres psql
+SELECT datname FROM pg_database ORDER BY datname;
+\q

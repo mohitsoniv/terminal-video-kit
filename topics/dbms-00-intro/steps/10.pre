@@ -1,0 +1,3 @@
+sudo -n -u postgres psql -q -c "DROP DATABASE IF EXISTS shopdb;"
+sudo -n -u postgres psql -q -c "CREATE DATABASE shopdb;"
+sudo -n -u postgres psql -q -d shopdb -c "CREATE TABLE products (id SERIAL PRIMARY KEY, name TEXT);"

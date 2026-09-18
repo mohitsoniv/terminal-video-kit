@@ -1,0 +1,2 @@
+\$ lsb_release ||| पहले देखते हैं कि हम कौन सा operating system चला रहे हैं। ||| lsb_release -a = OS ki poori jaankari
+^Description ||| यहाँ लिखा है Ubuntu 24 point 04।

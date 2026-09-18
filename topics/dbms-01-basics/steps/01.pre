@@ -1,0 +1,1 @@
+psql -d shopdb -q -c "DROP TABLE IF EXISTS orders, customers CASCADE;"

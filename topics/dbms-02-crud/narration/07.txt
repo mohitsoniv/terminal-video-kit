@@ -1,0 +1,5 @@
+^\$ psql ||| अब customer id 1 यानी Mohit को हटाने की कोशिश करते हैं, जिसके दो orders हैं।
+^ERROR: ||| Postgres ने मना कर दिया। यह वही foreign key constraint है जो पिछली video में बनाई थी।
+^DETAIL: ||| Postgres बता रहा है कि यह customer अभी orders table में इस्तेमाल हो रहा है।
+ ||| अगर यह delete हो जाता, तो ऐसे orders बच जाते जिनका कोई मालिक ही नहीं। इसे orphan records कहते हैं, और database इन्हें बनने से रोकता है।
+ ||| तो CRUD के चारों काम हो गए। INSERT से Create, SELECT से Read, UPDATE से Update, और DELETE से Delete।

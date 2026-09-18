@@ -1,0 +1,5 @@
+ ||| इस video में हम CRUD operations देखेंगे। CRUD का मतलब है Create, Read, Update और Delete। Database पर होने वाला लगभग हर काम इन्हीं चार में आता है।
+ ||| पिछली video वाला data वैसा ही है। दो customers, Mohit और Priya, और उनके दो orders।
+^\$ psql ||| पहला है Create, यानी नया data बनाना। इसके लिए INSERT command चलती है।
+RETURNING ||| RETURNING लगाने से Postgres बता देता है कि उसने असल में क्या save किया।
+^ +3 \| ||| देखिए, Neha को id मिली 3, अपने आप। Mohit और Priya की id पहले से 1 और 2 हैं।

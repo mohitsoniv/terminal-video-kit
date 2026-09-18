@@ -1,0 +1,5 @@
+ ||| SQL की commands दो बड़े हिस्सों में बँटी हैं, DDL और DML। यह फ़र्क़ समझना ज़रूरी है।
+ ||| DDL का मतलब है Data Definition Language। यह ढाँचा बनाती और बदलती है। CREATE, ALTER, DROP और TRUNCATE इसी में आती हैं। ||| DDL = CREATE, ALTER, DROP, TRUNCATE
+CREATE TABLE products ||| यह रही एक DDL command। हम products नाम की table का ढाँचा बना रहे हैं, उसमें data नहीं डाल रहे।
+^CREATE TABLE ||| Table बन गई।
+^ public \| products ||| और अब backslash d t में हमारी table दिख रही है, जो पिछले step में खाली थी।

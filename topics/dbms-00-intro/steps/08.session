@@ -1,0 +1,6 @@
+# wait 5
+sudo -u postgres psql
+CREATE DATABASE shopdb;
+\c shopdb
+\dt
+\q

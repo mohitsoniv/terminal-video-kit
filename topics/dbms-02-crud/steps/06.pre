@@ -1,0 +1,4 @@
+bash reset.sh
+psql -d shopdb -q -c "INSERT INTO customers (name, city) VALUES ('Neha','Gurugram');"
+psql -d shopdb -q -c "UPDATE customers SET city = 'Noida' WHERE name = 'Mohit';"
+psql -d shopdb -q -c "UPDATE customers SET city = 'Delhi';"

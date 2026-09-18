@@ -1,0 +1,6 @@
+ ||| अब अपना database बनाते हैं। ||| CREATE DATABASE = naya database banana
+CREATE DATABASE shopdb ||| CREATE DATABASE shopdb, और आखिर में semicolon। SQL command हमेशा semicolon पर खत्म होती है, वरना Postgres समझेगा कि आप अभी लिख ही रहे हैं।
+^CREATE DATABASE ||| जवाब में वही लिखा आया, CREATE DATABASE, यानी बन गया।
+\\c shopdb ||| अब उसमें घुसते हैं। backslash c का मतलब है connect। ||| \c shopdb = us database se connect karna
+shopdb=# ||| देखिए prompt बदल गया। पहले postgres था, अब shopdb है। यानी अब हम अपने database के अंदर हैं।
+Did not find any tables ||| और backslash d t से tables की list दिखती है। अभी लिखा है कोई table नहीं मिली, क्योंकि database अभी खाली है। ||| \dt = is database ki tables

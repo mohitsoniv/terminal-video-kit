@@ -1,0 +1,5 @@
+ ||| इस video में हम शुरू से शुरू करेंगे। पहले देखेंगे कि DBMS होता क्या है, फिर अपनी machine देखेंगे, Postgres से जुड़ेंगे, उसकी basic commands सीखेंगे, और आखिर में अपना पहला database बनाएँगे।
+ ||| DBMS का मतलब है Database Management System। यह वो software है जो data को संभालता है। कहाँ रखना है, कैसे ढूँढना है, कौन देख सकता है, और गड़बड़ होने पर data सुरक्षित कैसे रहे, यह सब DBMS का काम है।
+ ||| हम PostgreSQL इस्तेमाल करेंगे। यह free और open source है, बड़े-बड़े production systems में चलता है, और नियमों के मामले में सख़्त है, जो सीखने के लिए अच्छा है।
+^\$ lsb_release|^keen@ ||| सबसे पहले देखते हैं कि हम कौन सा operating system चला रहे हैं। ||| lsb_release -a = OS ki poori jaankari
+^Description ||| यहाँ लिखा है Ubuntu 24 point 04। हम इसी पर पूरा काम करेंगे।

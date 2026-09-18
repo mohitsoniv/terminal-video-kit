@@ -1,0 +1,6 @@
+ ||| अब देखते हैं कि इस server पर पहले से कौन-कौन से databases हैं। ||| \l = saare databases ki list
+SELECT datname ||| psql में backslash l यही list दिखाता है, लेकिन उसका output बहुत चौड़ा होता है। इसलिए यहाँ हम सीधे pg_database से सिर्फ़ नाम पढ़ रहे हैं।
+^ postgres$ ||| पहला है postgres। यह default database है, जहाँ psql बिना कुछ बताए connect कर लेता है।
+^ template0 ||| template0 और template1 साँचे यानी templates हैं। जब भी आप नया database बनाते हैं, Postgres template1 की copy बनाकर देता है। ||| template1 = naye database ka saancha
+^ template0 ||| इन्हें कभी छेड़ना नहीं चाहिए। template0 बिल्कुल साफ़ copy है, जो तब काम आती है जब template1 ख़राब हो जाए।
+rows\) ||| बाक़ी जो नाम दिख रहे हैं, वो इस machine पर पहले से बने हुए databases हैं।

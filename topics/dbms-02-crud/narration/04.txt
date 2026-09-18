@@ -1,0 +1,4 @@
+^\$ psql ||| तीसरा है Update, यानी पहले से मौजूद data बदलना।
+SET city ||| SET बताता है कि कौन सा column बदलना है, और WHERE बताता है कि किस row में बदलना है।
+^ +1 \| Mohit ||| Mohit का शहर Ghaziabad से बदलकर Noida हो गया।
+UPDATE 1 ||| नीचे लिखा है UPDATE 1, यानी सिर्फ एक row बदली। यही हम चाहते थे।

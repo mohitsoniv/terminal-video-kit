@@ -1,0 +1,4 @@
+# wait 4
+sudo -u postgres psql
+\l
+\q

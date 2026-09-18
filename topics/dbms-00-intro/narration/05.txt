@@ -1,0 +1,2 @@
+^\$ pg_isready|^keen@ ||| Install होना एक बात है, और server का चलना दूसरी बात। ||| pg_isready = server chal raha hai ya nahi
+accepting connections ||| यहाँ लिखा है accepting connections, यानी Postgres का server चालू है और connection लेने को तैयार है।

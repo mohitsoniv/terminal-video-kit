@@ -1,0 +1,7 @@
+ ||| दूसरा हिस्सा है DML, यानी Data Manipulation Language। यह ढाँचे के अंदर data को संभालती है। INSERT, UPDATE, DELETE और SELECT इसी में आती हैं। ||| DML = INSERT, UPDATE, DELETE, SELECT
+INSERT INTO products ||| यह रही DML। हम products table में एक row डाल रहे हैं।
+^INSERT 0 1 ||| INSERT 0 1 का मतलब है एक row अंदर चली गई।
+SELECT \* FROM products ||| और SELECT से वही data वापस पढ़ा जा सकता है।
+^ +1 \| Laptop ||| यह रही हमारी row। id एक, और name Laptop।
+ ||| तो सीधा फ़र्क़ यह है। DDL डिब्बा बनाती है, DML उस डिब्बे में सामान रखती और निकालती है।
+ ||| इस video में हमने अपनी machine देखी, Postgres से जुड़े, default databases देखे, अपना database बनाया, और DDL तथा DML का फ़र्क़ समझा। अगली video में हम tables की design में जाएँगे, जहाँ primary key और foreign key आते हैं।

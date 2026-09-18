@@ -1,0 +1,8 @@
+# format:  regex pattern ||| sentence
+^\$ psql ||| अब देखते हैं कि Postgres ने हमारा table किस तरह समझा। backslash d एक psql command है, जो table की बनावट दिखाती है।
+^ *Column ||| यह रही हमारी table की पूरी design। हर line एक attribute है।
+^ customer_id ||| पहला attribute customer underscore id, जिसका type integer है।
+^ name ||| दूसरा है name, type text, और यह not null है, यानी हर customer का नाम देना ज़रूरी है।
+^ city ||| तीसरा है city, जो खाली भी छोड़ा जा सकता है।
+nextval ||| Default वाले column में nextval लिखा है। यही SERIAL का असली काम है। हर नई row के लिए Postgres खुद अगला number उठा लेता है।
+PRIMARY KEY, btree ||| और सबसे नीचे Postgres बता रहा है कि primary key के लिए उसने अपने आप एक index बना दिया है, जिससे उस column पर search तेज़ रहे।

@@ -1,0 +1,1 @@
+sudo -n -u postgres psql -q -c "DROP DATABASE IF EXISTS shopdb;"

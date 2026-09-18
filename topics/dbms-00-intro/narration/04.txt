@@ -1,0 +1,6 @@
+^\$ psql|^keen@ ||| अब देखते हैं Postgres install है या नहीं। ||| psql = Postgres ka command line client
+^psql \(PostgreSQL ||| यहाँ जो version दिख रहा है, वो psql यानी client का है, 18 point 6। असली database server इससे अलग हो सकता है, और इस machine पर server 16 point 15 पर चल रहा है। ||| psql = client, postgres server = alag software
+^psql \(PostgreSQL ||| दोनों का अलग होना आम बात है। नया client पुराने server से आराम से जुड़ जाता है, बस कुछ नए commands काम नहीं करते।
+ ||| अगर आपके पास install नहीं है, तो Ubuntu पर एक ही command काफ़ी है। हम इसे यहाँ चला नहीं रहे, क्योंकि पहले से install है। ||| sudo apt install postgresql postgresql-contrib
+ ||| Windows वालों के लिए दो रास्ते हैं। पहला, Postgres की official website से installer। दूसरा और बेहतर, WSL यानी Windows Subsystem for Linux। उसमें Ubuntu चलता है, और फिर यही सारी commands वैसी की वैसी काम करती हैं। ||| WSL = Windows Subsystem for Linux
+ ||| Database को pgAdmin या DBeaver जैसे graphical tools से भी चलाया जा सकता है। लेकिन हम terminal पर काम करेंगे, क्योंकि असली servers पर graphical screen होती ही नहीं, और interview में भी यही पूछा जाता है।

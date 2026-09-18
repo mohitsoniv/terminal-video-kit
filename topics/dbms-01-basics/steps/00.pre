@@ -1,0 +1,1 @@
+dropdb --if-exists shopdb

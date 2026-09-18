@@ -1,0 +1,6 @@
+# format:  regex pattern ||| sentence
+^\$ curl ||| अब ऐसी file माँगते हैं जो server पर है ही नहीं।
+^\$ curl ||| dash i से curl response के headers भी दिखाता है, और head dash n 6 सिर्फ पहली छह lines दिखाता है।
+^HTTP/ ||| Server ने जवाब दिया 404। 4 से शुरू होने वाले status codes का मतलब है client की गलती।
+ ||| यहाँ गलती हमारी है, क्योंकि हमने गलत path माँगा। Server बिल्कुल ठीक चल रहा है।
+^HTTP/ ||| एक बात ध्यान रखिए। 404 के साथ लिखा text, जैसे यहाँ File not found, हर server अलग लिख सकता है। असली मतलब number से तय होता है, text से नहीं।

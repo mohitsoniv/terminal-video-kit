@@ -1,0 +1,2 @@
+postgres=# ||| psql का prompt आ गया, यानी हम database से जुड़ गए।
+^ postgres ||| यह default database है जो install के साथ बनता है। ||| \l = list all databases

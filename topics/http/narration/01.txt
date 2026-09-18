@@ -1,0 +1,12 @@
+# format:  regex pattern ||| sentence      (pattern khaali = koi highlight nahi)
+^\$ curl ||| पहले step में हम curl से अपने local server को एक HTTP request भेज रहे हैं।
+^\$ curl ||| dash v का मतलब है verbose, यानी curl हमें पूरी बातचीत दिखाएगा।
+^> ||| जिन lines के आगे greater than का निशान है, वो हमारी request है।
+^> GET ||| पहली line है GET slash index dot html HTTP 1.1। यानी method GET, path index dot html, और version HTTP 1.1।
+^> (Host|User-Agent|Accept) ||| उसके नीचे headers हैं, जैसे Host और User-Agent।
+^<( |$) ||| जिन lines के आगे less than का निशान है, वो server का response है।
+^< HTTP/ ||| सबसे ऊपर 200 OK, यानी request सफल हुई।
+^< Content- ||| Content-type बताता है कि यह HTML है, और Content-Length बताता है कि यह 20 bytes का है।
+^> GET|^< HTTP/ ||| एक दिलचस्प बात देखिए। हमने request HTTP 1.1 में भेजी, लेकिन Python का यह छोटा server जवाब HTTP 1.0 में देता है।
+assume close ||| इसीलिए curl लिख रहा है, assume close after body। यानी response के बाद connection बंद हो जाएगा।
+ ||| यही HTTP 1.0 की कमी थी, जिसे HTTP 1.1 के keep-alive ने ठीक किया।

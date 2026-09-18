@@ -1,0 +1,14 @@
+# har machine ka apna
+calib/calib.json
+calib/frames/
+calib/calib.tape
+calib/calib-term.mp4
+
+# build ka kaam aur output
+topics/*/build/
+*.mp4
+*.mp3
+demo/
+
+# python
+__pycache__/

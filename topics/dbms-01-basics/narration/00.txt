@@ -1,0 +1,8 @@
+# format:  regex pattern ||| sentence
+ ||| सबसे पहले हमें एक database चाहिए। Database एक डिब्बा है, जिसके अंदर हमारी सारी tables और उनका data रहता है।
+^\$ createdb ||| createdb एक command line tool है जो Postgres के साथ आता है। हम इससे shopdb नाम का database बना रहे हैं।
+^\$ createdb ||| यही काम SQL से भी होता है, CREATE DATABASE shopdb लिखकर। दोनों का नतीजा एक ही है।
+^\$ createdb ||| उसके बाद psql से हम उसी database से जुड़ रहे हैं। dash d का मतलब है किस database से connect करना है।
+^ *connected_db ||| SELECT current underscore database, यह query बताती है कि हम इस वक़्त किस database से जुड़े हैं।
+^ shopdb ||| और जवाब है shopdb। यानी database बन गया और हम उसके अंदर पहुँच गए।
+ ||| अब इसी database के अंदर हम अपनी tables बनाएँगे।

@@ -1,0 +1,6 @@
+# format:  regex pattern ||| sentence
+^\$ psql ||| अब दोनों tables को जोड़कर देखते हैं। JOIN का काम यही है, अलग-अलग tables का data एक साथ दिखाना।
+ON o.customer_id ||| जोड़ने का आधार वही foreign key है। orders का customer underscore id, customers के customer underscore id से मिलाया जा रहा है।
+^ Mohit ||| और यह रहा नतीजा। Mohit Ghaziabad से, उसका order 500 रुपये का।
+^ Priya ||| और Priya Delhi से, जिसका order 1250 रुपये 50 पैसे का।
+ ||| ध्यान दीजिए, customer का नाम और शहर सिर्फ customers table में एक बार लिखा है, orders में नहीं। यही सही design है, और इसी सोच को normalization कहते हैं, जो अगली video में देखेंगे।

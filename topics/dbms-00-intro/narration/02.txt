@@ -1,0 +1,4 @@
+ ||| अब देखते हैं कि machine में कितनी ताक़त है। ||| lscpu = CPU ki jaankari
+^Model name ||| यह एक Intel i7 का laptop processor है, कोई भारी server नहीं। ||| grep = sirf matching lines dikhata hai
+^CPU\(s\) ||| आठ CPU threads हैं, यानी चार असली cores।
+ ||| यहाँ एक ज़रूरी बात। Postgres चलाने के लिए बड़ी machine ज़रूरी नहीं है। एक या दो CPU और दो GB RAM वाली साधारण machine पर भी यह आराम से चलता है। सीखने के लिए तो और भी कम में काम चल जाता है।

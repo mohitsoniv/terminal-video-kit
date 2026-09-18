@@ -1,0 +1,7 @@
+# format:  regex pattern ||| sentence
+ ||| अब दूसरी entity बनाते हैं, orders। एक customer कई orders दे सकता है, इसलिए दोनों के लिए अलग-अलग table होंगे।
+order_id SERIAL ||| order underscore id इस table की primary key है, जो हर order को अलग पहचान देती है।
+REFERENCES customers ||| और यह है foreign key। customer underscore id इस table का column है, लेकिन इसकी value customers table के primary key से आनी चाहिए।
+REFERENCES customers ||| Foreign key दो tables को आपस में जोड़ती है, और यह भी पक्का करती है कि ऐसा order कभी न बने जिसका customer मौजूद ही न हो।
+NUMERIC\(8,2\) ||| amount का type NUMERIC 8 comma 2 है। इसका मतलब है कुल आठ digits, जिनमें दो digits दशमलव के बाद। पैसे के लिए यही सही type है, क्योंकि इसमें हिसाब बिल्कुल सटीक रहता है।
+^CREATE TABLE ||| Table बन गया।
